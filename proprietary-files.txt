@@ -91,11 +91,7 @@ system_ext/lib64/liboplushwui_jni.so
 system_ext/lib64/libpenguin.so:vendor/lib64/libpenguin.so
 system_ext/lib64/vendor.oplus.hardware.cameraMDM@1.0.so
 
-# System partition OPlus camera HAL libs
-system/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
-system_ext/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so;MODULE_SUFFIX=_system_ext
-
-# System partition permission files
+# System partition permission files (not covered by YAAP)
 system/etc/permissions/privapp-permissions-oplus.xml
 
 # Camera license files
