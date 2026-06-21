@@ -20,6 +20,18 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/compatconfig/oplus-gallery-receiver-compat-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/compatconfig/oplus-gallery-receiver-compat-config.xml \
     $(LOCAL_PATH)/configs/init/init.oplus.camera_rus.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.oplus.camera_rus.rc
 
+# Product properties (ro.product.*)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.camerax.extensions.enabled=true \
+    ro.camera.enableCamera1MaxZsl=1 \
+    ro.camera.disableHeicUltraHDR=1 \
+    ro.camera.notify_nfc=1 \
+    vendor.camera.algo.jpeghwencode=0
+
+# ODM properties (ro.odm.*)
+PRODUCT_ODM_PROPERTIES += \
+    ro.hardware.camera=oemlayer.v2
+
 # Properties
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.oplus.camera \
