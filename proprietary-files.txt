@@ -95,6 +95,13 @@ system/etc/permissions/privapp-permissions-oplus.xml
 # Camera license files
 odm/etc/camera/license_release_fdc.lic
 
+# Virtual camera provider (ODM)
+odm/bin/hw/virtualcameraprovider
+odm/etc/virtualcamera.json
+odm/etc/init/virtualcameraprovider.rc
+odm/etc/init/init.camera_debug_ui.rc
+odm/etc/vintf/manifest/manifest_oplus_virtualdevice_camera.xml
+
 # Camera product configs
 my_product/etc/camera/engineer_camera_config:product/etc/camera/engineer_camera_config
 
