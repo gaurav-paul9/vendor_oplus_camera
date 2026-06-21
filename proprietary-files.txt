@@ -97,3 +97,6 @@ odm/etc/camera/license_release_fdc.lic
 
 # Camera product configs
 my_product/etc/camera/engineer_camera_config:product/etc/camera/engineer_camera_config
+
+# Camera extension service (dlopen'd by CameraServiceExtFactory)
+system_ext/lib64/libcsextimpl.so;DISABLE_CHECKELF
