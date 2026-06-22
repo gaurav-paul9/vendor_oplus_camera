@@ -107,3 +107,72 @@ my_product/etc/camera/engineer_camera_config:product/etc/camera/engineer_camera_
 
 # Camera extension service (dlopen'd by CameraServiceExtFactory)
 system_ext/lib64/libcsextimpl.so;DISABLE_CHECKELF
+
+# Camera extension HAL (AIDL service-impl in ODM, NDK libs in vendor + system)
+odm/lib/vendor.oplus.hardware.cameraextension-V1-service-impl.so
+odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so
+odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
+
+# System camera extension NDK libs (needed by camera app for extensions API)
+system/lib/vendor.oplus.hardware.cameraextension-V1-ndk.so
+system/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
+
+# Vendor camera extension NDK libs
+vendor/lib/vendor.oplus.hardware.cameraextension-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
+
+# System camera extension HIDL libs (needed for camera extension @1.0 support)
+system/lib/vendor.oplus.hardware.cameraextension@1.0.so
+system/lib64/vendor.oplus.hardware.cameraextension@1.0.so
+
+# Native window buffer exchange lib (used by camera / extensions)
+system_ext/lib64/libNativeWinBuffExchange.so
+
+# Camera MIDAS service HAL (Multi-Image Depth-Aware Service)
+vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
+
+# Camera sensor config for Qualcomm Sensing Hub (SLPI)
+vendor/etc/sensors/config/qsh_camera.json
+
+# Extensions service APK (camera extension support)
+system/app/ExtensionsService/ExtensionsService.apk
+
+# Qualcomm SLPI sensor configs (camera uses gyro/accel for EIS/OIS)
+vendor/etc/sensors/config/sns_aont.json
+vendor/etc/sensors/config/sns_amd.json
+vendor/etc/sensors/config/sns_amd_sw_enabled.json
+vendor/etc/sensors/config/sns_basic_gestures.json
+vendor/etc/sensors/config/sns_bring_to_ear.json
+vendor/etc/sensors/config/sns_ccd_v1_0_amd.json
+vendor/etc/sensors/config/sns_ccd_v1_0_ttw.json
+vendor/etc/sensors/config/sns_ccd_v2_0_walk.json
+vendor/etc/sensors/config/sns_ccd_v3_0_walk.json
+vendor/etc/sensors/config/sns_ccd_v3_1_walk.json
+vendor/etc/sensors/config/sns_ccd_v4_0_sensors.json
+vendor/etc/sensors/config/sns_ccd_v4_0_te_cd_regs.json
+vendor/etc/sensors/config/sns_ccd_v5_0_te_cd_regs.json
+vendor/etc/sensors/config/sns_cm.json
+vendor/etc/sensors/config/sns_dae.json
+vendor/etc/sensors/config/sns_device_orient.json
+vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_direct_channel.json
+vendor/etc/sensors/config/sns_distance_bound.json
+vendor/etc/sensors/config/sns_dpc.json
+vendor/etc/sensors/config/sns_facing.json
+vendor/etc/sensors/config/sns_fmv.json
+vendor/etc/sensors/config/sns_fmv_legacy.json
+vendor/etc/sensors/config/sns_gyro_cal.json
+vendor/etc/sensors/config/sns_heart_rate.json
+vendor/etc/sensors/config/sns_mag_cal.json
+vendor/etc/sensors/config/sns_mag_cal_legacy.json
+vendor/etc/sensors/config/sns_multishake.json
+vendor/etc/sensors/config/sns_offbody_detect_phone.json
+vendor/etc/sensors/config/sns_pedometer.json
+vendor/etc/sensors/config/sns_rmd.json
+vendor/etc/sensors/config/sns_rotv.json
+vendor/etc/sensors/config/sns_smd.json
+vendor/etc/sensors/config/sns_tilt.json
+vendor/etc/sensors/config/sns_tilt_sw_enabled.json
+vendor/etc/sensors/config/sns_tilt_to_wake.json
+vendor/etc/sensors/config/sns_transport_ppe.json
+vendor/etc/sensors/config/sns_wrist_pedo.json

@@ -69,6 +69,16 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.oplus.camera.speechassist=true \
     ro.oplus.system.camera.flashlight=com.oplus.motor.flashlight \
     ro.camera.privileged.3rdpartyApp=com.mediatek.expert.mtkcamhelper;com.aiunit.aon; \
+    ro.oplus.camera.livephoto.support=1 \
+    persist.logd.log.load.camerahalserver.lower_limit=1000 \
+    persist.logd.log.load.camerahalserver.threshold=800000 \
+    persist.logd.log.load.camerahalserver.upper_limit=3000 \
+    persist.logd.log.load.com.oplus.camera.lower_limit=1000 \
+    persist.logd.log.load.com.oplus.camera.threshold=800000 \
+    persist.logd.log.load.com.oplus.camera.upper_limit=3000 \
+    persist.logd.log.load.vendor.qti.camera.provider-service_64.lower_limit=500 \
+    persist.logd.log.load.vendor.qti.camera.provider-service_64.threshold=400000 \
+    persist.logd.log.load.vendor.qti.camera.provider-service_64.upper_limit=1500 \
 
 # Photo
 $(call soong_config_set,camera,package_name,com.oplus.packageName)
