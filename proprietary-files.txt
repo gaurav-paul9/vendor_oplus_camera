@@ -102,6 +102,26 @@ odm/etc/init/virtualcameraprovider.rc
 odm/etc/init/init.camera_debug_ui.rc
 odm/etc/vintf/manifest/manifest_oplus_virtualdevice_camera.xml
 
+# Virtual camera HIDL implementation libs (ODM)
+odm/lib/vendor.oplus.hardware.virtual_device.audio-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.virtual_device.audio-V1-ndk.so
+odm/lib/vendor.oplus.hardware.virtual_device.audio-impl.so
+odm/lib64/vendor.oplus.hardware.virtual_device.audio-impl.so
+odm/lib/vendor.oplus.hardware.virtual_device.camera.hal@3.3.so
+odm/lib64/vendor.oplus.hardware.virtual_device.camera.hal@3.3.so
+odm/lib/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so
+odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so
+odm/lib/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so
+odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so
+odm/lib/vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl.so
+odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl.so
+odm/lib/vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl.so
+odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl.so
+odm/lib/vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl.so
+odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl.so
+odm/lib/vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl.so
+odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl.so
+
 # Camera product configs
 my_product/etc/camera/engineer_camera_config:product/etc/camera/engineer_camera_config
 
