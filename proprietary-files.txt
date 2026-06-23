@@ -113,14 +113,6 @@ odm/lib/vendor.oplus.hardware.cameraextension-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so
 odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 
-# System camera extension NDK libs (needed by camera app for extensions API)
-system/lib/vendor.oplus.hardware.cameraextension-V1-ndk.so
-system/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
-
-# Vendor camera extension NDK libs
-vendor/lib/vendor.oplus.hardware.cameraextension-V1-ndk.so
-vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
-
 # System camera extension HIDL libs (needed for camera extension @1.0 support)
 system/lib/vendor.oplus.hardware.cameraextension@1.0.so
 system/lib64/vendor.oplus.hardware.cameraextension@1.0.so
