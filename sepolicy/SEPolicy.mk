@@ -5,8 +5,10 @@
 #
 
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    vendor/oplus/camera/sepolicy/vendor \
-    vendor/oplus/camera/sepolicy/public
+    vendor/oplus/camera/sepolicy/vendor
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     vendor/oplus/camera/sepolicy/private
+
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+    vendor/oplus/camera/sepolicy/public
